@@ -23,6 +23,20 @@ public class PlayerController : MonoBehaviour
              newSplit.transform.localScale = Vector3.one * Random.Range(0.7f, 1.3f);
              newSplit.transform.parent = other.transform;
 
+             string materialName = other.transform.GetComponent<MeshRenderer> ().material.name;
+
+             if (materialName == "Safe (Instance)")
+             {
+                 
+             }
+             if (materialName == "UnSafe (Instance)")
+             {
+                 GameManager.gameOver = true;
+             }
+             if (materialName == "LastRing (Instance)")
+             {
+                 GameManager.levelWin = true;
+             }
 
     }
 }
