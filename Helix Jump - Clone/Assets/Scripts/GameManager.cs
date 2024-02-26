@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI nextLevelText;
 
     public Slider ProggressBar;
+    public static bool mute;
 
     private void Awake()
     {
@@ -48,7 +49,7 @@ public class GameManager : MonoBehaviour
             }
         }
         //update our slider
-        int proggress = noOfPassingRings * 100 / FindObjectOfType<HelixManager>().noOfRings;
+        int proggress = noOfPassingRings * 10 / FindObjectOfType<HelixManager>().noOfRings;
         ProggressBar.value = proggress;
 
         currentLevelText.text = CurrentLevelIndex.ToString();
