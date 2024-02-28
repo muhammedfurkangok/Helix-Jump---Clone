@@ -9,20 +9,33 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    #region Self Variables
+
+    #region Public Variables
+    
     public static bool gameOver;
     public static bool levelWin;
-
     public GameObject gameOverPannel;
     public GameObject levelWinPannel;
-
-    public static int CurrentLevelIndex;
-    public static int noOfPassingRings;
-
     public TextMeshProUGUI currentLevelText;
     public TextMeshProUGUI nextLevelText;
-
-    public Slider ProggressBar;
+    public static int CurrentLevelIndex;
+    public static int noOfPassingRings;
+    
+    public Slider uiFillImage;
     public static bool mute;
+
+    #endregion
+
+    #region Private Variables
+
+    public static  bool _isGameReady;
+
+    #endregion
+
+
+    #endregion
+   
 
     private void Awake()
     {
@@ -49,8 +62,8 @@ public class GameManager : MonoBehaviour
             }
         }
         //update our slider
-        int proggress = noOfPassingRings * 10 / FindObjectOfType<HelixManager>().noOfRings;
-        ProggressBar.value = proggress;
+        float proggress = noOfPassingRings * 12.5f  / FindObjectOfType<HelixManager>().noOfRings;
+        uiFillImage.value = proggress;
 
         currentLevelText.text = CurrentLevelIndex.ToString();
         nextLevelText.text = (CurrentLevelIndex + 1).ToString();
@@ -59,9 +72,10 @@ public class GameManager : MonoBehaviour
             levelWinPannel.SetActive(true);
             if (Input.GetMouseButtonDown(0))
             {
-                PlayerPrefs.SetInt("CurrentLevelIndex", CurrentLevelIndex + 1);
                 SceneManager.LoadScene(0);
             }
         }
     }
+
+  
 }

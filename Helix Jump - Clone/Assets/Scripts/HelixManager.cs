@@ -23,6 +23,7 @@ public class HelixManager : MonoBehaviour
     #endregion
     private void Start()
     {
+        
         noOfRings = GameManager.CurrentLevelIndex + 5;
         for (int i = 0; i < noOfRings; i++)
         {
