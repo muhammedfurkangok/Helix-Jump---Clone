@@ -295,7 +295,7 @@ Material:
     - _StencilComp: 8
     - _StencilFail: 0
     - _StencilMode: 1
-    - _StencilPass: 0
+    - _StencilPass: 2
     - _StencilReadMask: 255
     - _StencilRef: 0
     - _StencilWriteMask: 255
