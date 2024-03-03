@@ -6,6 +6,8 @@ Kullandığım Assetler:MKToon Shader,BOXOPHOBİC Background, FlappyBird Sprite 
 
 -3 Farklı Sahne (AnaMenü,Market,Level)
 
+-Foldering Alıştırması
+
 -Her Levelde level indexi'nin 7 fazlası kadar ring oluşur,Rastgele prefable spawnlanır,sonsuz level tasarlanabilir
 
 -Dinamik Proggress Bar
