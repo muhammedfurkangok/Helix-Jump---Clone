@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6902849901863850129}
   - component: {fileID: 2210069067330718336}
   - component: {fileID: 8525900764570265617}
-  - component: {fileID: 9072785821639475221}
+  - component: {fileID: 8301982257856772158}
   - component: {fileID: 8078870327198447216}
   - component: {fileID: 8273833948793910084}
   - component: {fileID: 6314328645591979008}
@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 6462288160966768248}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.02, y: 0.022, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -87,7 +87,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &9072785821639475221
+--- !u!135 &8301982257856772158
 SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,7 +106,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.5000001
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8078870327198447216
 MonoBehaviour:
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c91be0aef89395489f611af19572664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 8273833948793910084}
   splitPrefab: {fileID: 8541329100612613355, guid: 2a5a16882f284c84c9f393cfc844bf91,
     type: 3}
   bounceForce: 400
@@ -162,3 +163,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7cb6f59b50308841831df3d28c7ce9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 8273833948793910084}

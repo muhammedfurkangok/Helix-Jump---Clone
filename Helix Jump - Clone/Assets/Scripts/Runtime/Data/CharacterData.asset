@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e018c749c3a44f28ed779d7116981f8, type: 3}
+  m_Name: CharacterData
+  m_EditorClassIdentifier: 
+  character:
+  - CharacterName: Default
+    CharacterMaterial: {fileID: 6462288160966768248, guid: 897ca1346f9fc1b4aacbcbdee63d9456,
+      type: 3}
+    SplitPrefabs: {fileID: 8541329100612613355, guid: 2a5a16882f284c84c9f393cfc844bf91,
+      type: 3}
+  - CharacterName: Watermelon
+    CharacterMaterial: {fileID: 6462288160966768248, guid: f51642c5d3a68f1418088f881063791a,
+      type: 3}
+    SplitPrefabs: {fileID: 8541329100612613355, guid: a98ebc99c712484458c7b097377719bb,
+      type: 3}
+  - CharacterName: Woody
+    CharacterMaterial: {fileID: 6462288160966768248, guid: f5272e62a94404a46ad091e2da29e78d,
+      type: 3}
+    SplitPrefabs: {fileID: 8541329100612613355, guid: b38015c0581b66741a7801ae913f1419,
+      type: 3}
+  - CharacterName: Checker
+    CharacterMaterial: {fileID: 6462288160966768248, guid: 7a31ab8269be7de4f97d5cc92347ad20,
+      type: 3}
+    SplitPrefabs: {fileID: 8541329100612613355, guid: a47634548a275ec4e9bc3f1b72f4603a,
+      type: 3}

@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -120,7 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c91be0aef89395489f611af19572664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  splitPrefab: {fileID: 8541329100612613355, guid: 2a5a16882f284c84c9f393cfc844bf91,
+  rb: {fileID: 8273833948793910084}
+  splitPrefab: {fileID: 8541329100612613355, guid: a98ebc99c712484458c7b097377719bb,
     type: 3}
   bounceForce: 400
 --- !u!54 &8273833948793910084
@@ -162,3 +163,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7cb6f59b50308841831df3d28c7ce9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rb: {fileID: 8273833948793910084}
